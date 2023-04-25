@@ -1,3 +1,46 @@
-.container{
-    margin: 0;
+body{
+    text-align: center;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23270000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%234f0000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23760000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%239e0000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23C50000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    }
+
+.formulario{
+    background-color: white;
+    width: 500px;
+    display: flex;
+    height: 500px;
+    align-content: center;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 10%;
+    justify-content: center;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+#texto{
+    color: black;
+    height: 320px;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin: 55px 0 0 0px;
+}
+
+#texto label{
+    margin: 20px;
+}
+
+#comentario{
+    max-width: 200px;
+    max-height: 150px;
+    min-width: 150px
+}
+
+button{
+    position: relative;
+    width: 60px;
+    height: 20px;
 }
