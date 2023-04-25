@@ -5,27 +5,50 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <title>Jean Carlos</title>
     </head>
     <body>
         <div class="formulario">
-            <form action="" id="texto">
-                <label for="">Nombre</label>
-                <br>
-                <input type="text">
-                <br>
+            <h1 id="title">FORMULARIO</h1>
+            <div class="column">
+                <form action="" id="texto">
+                    
+                    <label for="text">Nombre</label>
+                    <br>
+                    <input type="text" class="input">
+                    <br>
 
-                <label for="">Apellido</label>
-                <br>
-                <input type="text">
-                <br>
+                    <label for="text">Teléfono</label>
+                    <br>
+                    <input type="number" class="input" maxlength="6">
+                    <br>
+                </form>
+            </div>
 
-                <label for="">Comentario</label><br>
-                <textarea name="comentario" id="comentario" cols="21" rows="1"></textarea>
-                <br>
+            <div class="column">
+                <form action="" id="texto">
+                    <label for="text">Apellido</label>
+                    <br>
+                    <input type="text" class="input">
+                    <br>
 
-                <label for="">Opciones</label>
-                <select name="" id="">
+                    <label for="text">Correo</label>
+                    <br>
+                    <input type="email" class="input">
+                    <br>
+                </form>
+            </div>
+            
+            <div class="formulario2">
+                <label for="text">Comentario</label><br>
+                <textarea name="comentario" id="comentario" class="input"></textarea>
+                <br>
+                
+                <label for="text">Opciones</label>
+                <br>
+                <select name="" id="select">
                     <option value="" disabled selected>Seleccionar</option>
                     <option value="">Opción 1</option>
                     <option value="">Opción 2</option>
@@ -34,16 +57,18 @@
                     <option value="">Opción 5</option>
                 </select>
 
-                <ol>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                </ol>
-                <button type="button">Envíar</button>
-            </form>
-
+                <!--Botón-->
+                <form action=""> 
+                    <a href="#" type="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Envíar
+                    </a>
+                </form>
+                <!--Botón-->
+            </div>
 
         </div>
     </body>

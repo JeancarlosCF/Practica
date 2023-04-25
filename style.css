@@ -1,24 +1,69 @@
 body{
     text-align: center;
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23270000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%234f0000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23760000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%239e0000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23C50000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #F0F0F0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='1000' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%23697693' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%238491af' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%23697693' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%238491af' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23A0ADCC' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%234a8d85' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2369aca3' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%2388CCC3' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2369aca3' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%234a8d85' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%2388CCC3' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%234a8d85' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%2388CCC3' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2369aca3' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%2388CCC3' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     align-items: center;
     }
 
 .formulario{
-    background-color: white;
-    width: 500px;
+    background-color: rgba(255,255,255,0.5);
+    width: 600px;
     display: flex;
-    height: 500px;
+    height: 580px;
     align-content: center;
     margin: auto;
     margin-top: 10%;
     border-radius: 10%;
     justify-content: center;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+.formulario2{
+    position: absolute;
+    margin-top: 16.5em;
+}
+
+.column{
+    margin: 20px;
+}
+
+.input{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+    
+}
+
+.input:focus-visible {
+    outline: 0;
+  }
+
+.input:focus{
+    background: #7789f3;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #7789f3,
+                0 0 15px #4f67ec,
+                0 0 30px #3d59f7,
+                0 0 70px #3b58ff;
+}
+
+
+#title{
+    position: absolute;
+    font-size: 50px;
+    top: 8em;
+    left: 3em;
+    text-shadow: -5px 10px 10px #3c6774;
 }
 
 #texto{
@@ -39,8 +84,120 @@ body{
     min-width: 150px
 }
 
-button{
-    position: relative;
-    width: 60px;
-    height: 20px;
+select {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border: 0;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+ }
+
+
+.formulario form a {
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+color: #263cb7;
+font-size: 16px;
+text-decoration: none;
+text-transform: uppercase;
+overflow: hidden;
+transition: .5s;
+margin-top: 80px;
+letter-spacing: 4px
+}   
+
+.formulario a:hover {
+background: #2835e6;
+color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 5px #2f48d3,
+            0 0 25px #263cb7,
+            0 0 50px #2f48d3,
+            0 0 100px #364edb;
+
+}
+
+.formulario a span {
+position: absolute;
+display: block;
+}
+
+.formulario a span:nth-child(1) {
+top: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg, transparent, #2835e6);
+animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+0% {
+left: -100%;
+}
+50%,100% {
+left: 100%;
+}
+}
+
+.formulario a span:nth-child(2) {
+top: -100%;
+right: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(180deg, transparent, #2835e6);
+animation: btn-anim2 1s linear infinite;
+animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+0% {
+top: -100%;
+}
+50%,100% {
+top: 100%;
+}
+}
+
+.formulario a span:nth-child(3) {
+bottom: 0;
+right: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(270deg, transparent, #2835e6);
+animation: btn-anim3 1s linear infinite;
+animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+0% {
+right: -100%;
+}
+50%,100% {
+right: 100%;
+}
+}
+
+.formulario a span:nth-child(4) {
+bottom: -100%;
+left: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(360deg, transparent, #2835e6);
+animation: btn-anim4 1s linear infinite;
+animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+0% {
+bottom: -100%;
+}
+50%,100% {
+bottom: 100%;
+}
 }
