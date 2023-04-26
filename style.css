@@ -29,6 +29,8 @@ body{
     margin: 20px;
 }
 
+
+
 .input{
     font-family: 'Poppins', sans-serif;
     border-radius: 10px;
@@ -46,23 +48,40 @@ body{
     outline: 0;
   }
 
-.input:focus{
-    background: #7789f3;
-    color: #fff;
+.input:focus,select:focus{
+    background-color: #aff7ed;
+    color: #000;
+    font-weight: 800;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #98faed,
+                0 0 15px #6ed4c7,
+                0 0 20px #72d1c4,
+                0 0 50px #5cd8c7;
+}
+
+.input:hover,select:hover{
+    background-color: #c7f8f2;
+    color: #000;
     font-weight: 800;
     border-radius: 5px;
     box-shadow: 0 0 5px #7789f3,
                 0 0 15px #4f67ec,
-                0 0 30px #3d59f7,
-                0 0 70px #3b58ff;
+                0 0 20px #3d59f7,
+                0 0 50px #3b58ff;
+
 }
+
+.input ~ .focus-bg:before,
+.input ~ .focus-bg:after{content: ""; position: absolute; left: 50%; top: 50%; width: 0; height: 0;}input, textarea, select{transition: 0.3s; z-index: -1;}
+.input:focus ~ .focus-bg:before{transition: 0.3s; width: 50%; left: 0; top: 0; height: 100%;}
+.input ~ .focus-bg:after{left: auto; right: 50%; top: auto; bottom: 50%;}
+.input:focus ~ .focus-bg:after{transition: 0.3s; width: 50%; height: 100%; bottom: 0; right: 0;}
 
 
 #title{
     position: absolute;
     font-size: 50px;
-    top: 8em;
-    left: 3em;
+    top: 0.5em;
     text-shadow: -5px 10px 10px #3c6774;
 }
 
@@ -82,6 +101,39 @@ body{
     max-width: 200px;
     max-height: 150px;
     min-width: 150px
+}
+
+#social{
+    background-color: rgba(255,255,255,0.5);
+    width: 650px;
+    display: flex;
+    height: 100px;
+    margin-top: 20%;
+    border-radius: 15px;
+    justify-content: center;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 18em;
+    left: -12.4em;
+}
+
+#social img,li{
+    margin: 0;
+    padding: 0;
+}
+
+#social ul{
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+}
+
+#social form{
+    display: flex;
+}
+
+#logo-social{
+    margin-top: 15%;
 }
 
 select {
@@ -107,9 +159,13 @@ text-decoration: none;
 text-transform: uppercase;
 overflow: hidden;
 transition: .5s;
-margin-top: 80px;
+margin-top: 70px;
 letter-spacing: 4px
-}   
+}  
+
+#social li a{
+    margin-top: 10px;
+}
 
 .formulario a:hover {
 background: #2835e6;
